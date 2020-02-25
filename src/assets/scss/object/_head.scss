@@ -1,0 +1,23 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  &__arrow {
+    margin: 0 15px;
+    cursor: pointer;
+    &__left {
+    }
+    &__right {
+    }
+  }
+  &__month {
+    padding-right: 10px;
+    font-size: 1.125em;
+    font-weight: 300;
+  }
+  &__year {
+    font-size: 1.563em;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,61 @@
+.calender {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  &-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &:first-child {
+      border-bottom: 1px solid rgba($color-border,.8);
+    }
+    &:not(:first-child) {
+      padding: 5px 0;
+    }
+    th {
+      padding: 4px 0 10px;
+      width: calc(100% / 7);
+      letter-spacing: .05em;
+    }
+    td {
+      position: relative;
+      width: calc((100% / 7) - 5px);
+      height: 60px;
+      cursor: pointer;
+      span {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        display: inline-block;
+        padding: 8px;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.day {
+  &__sun {
+    color: $colo-sun;
+  }
+  &__sat {
+    color: $color-sat;
+  }
+  &__holiday {
+    color: $color-holiday;
+  }
+  &__gray {
+    opacity: .6;
+  }
+  &__today {
+    background-color: $color-today;
+    color: $color-white;
+    font-weight: 500;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(64, 64, 64, 0.3);
+  }
+}
