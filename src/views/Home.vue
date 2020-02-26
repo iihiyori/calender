@@ -31,15 +31,6 @@
           </template>
         </tr>
       </template>
-      <!--      <tr class="calender-line">-->
-      <!--        <td><span class="day__sun">16</span></td>-->
-      <!--        <td><span>17</span></td>-->
-      <!--        <td><span>18</span></td>-->
-      <!--        <td><span>19</span></td>-->
-      <!--        <td><span>20</span></td>-->
-      <!--        <td><span class="day__today">21</span></td>-->
-      <!--        <td><span class="day__sat">22</span></td>-->
-      <!--      </tr>-->
     </table>
   </div>
 </template>
